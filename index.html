@@ -916,13 +916,13 @@
   <!-- User Welcome (shown after login) -->
   <div class="user-welcome hidden" id="userWelcome">
     <p class="welcome-text">Welcome, <span class="user-name" id="displayName"></span><span class="prestige-badge" id="userPrestigeBadge"></span></p>
-    <p class="your-flasts">Your picoseconds: <span class="your-flasts-count" id="yourFlasts">0</span></p>
+    <p class="your-flasts">Your finger flasts: <span class="your-flasts-count" id="yourFlasts">0</span></p>
     <p class="time-online">Total time online: <span class="time-online-value" id="timeOnline">0:00:00</span></p>
     <div class="prestige-info">
       <div class="prestige-progress">
         <div class="prestige-progress-bar" id="prestigeProgress" style="width: 0%"></div>
       </div>
-      <p class="next-prestige" id="nextPrestigeText">100 ps until next prestige</p>
+      <p class="next-prestige" id="nextPrestigeText">100 until next prestige</p>
     </div>
     <button class="logout-btn" onclick="handleLogout()">logout</button>
   </div>
@@ -935,7 +935,7 @@
     <p class="counter-text">
       <span id="loadingText" class="loading">Loading...</span>
       <span id="counterText" class="hidden">
-        Tom has been finger flasted for <span class="counter-number" id="countNumber">0</span> picoseconds
+        Tom has been finger flasted <span class="counter-number" id="countNumber">0</span> times
       </span>
     </p>
   </div>
@@ -957,7 +957,7 @@
     <h2 class="prestige-table-title">🎖️ Prestige Levels</h2>
     <div class="prestige-table" id="prestigeTable">
       <div class="prestige-table-header">
-        <span class="prestige-col-ps">Picoseconds</span>
+        <span class="prestige-col-ps">Finger Flasts</span>
         <span class="prestige-col-badge">Badge</span>
         <span class="prestige-col-title">Title</span>
       </div>
@@ -1170,7 +1170,7 @@
           document.getElementById('nextPrestigeText').textContent = '🎉 MAX PRESTIGE - ' + info.title;
         } else {
           document.getElementById('nextPrestigeText').textContent = 
-            info.flastsToNext + ' ps until ' + info.nextLevel.badge + ' ' + info.nextLevel.title;
+            info.flastsToNext + ' until ' + info.nextLevel.badge + ' ' + info.nextLevel.title;
         }
       }
 
@@ -1349,7 +1349,7 @@
         
         table.innerHTML = `
           <div class="prestige-table-header">
-            <span class="prestige-col-ps">Picoseconds</span>
+            <span class="prestige-col-ps">Finger Flasts</span>
             <span class="prestige-col-badge">Badge</span>
             <span class="prestige-col-title">Title</span>
           </div>
